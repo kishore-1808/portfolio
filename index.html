@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kishore S — AI & Full-Stack Developer</title>
+  <meta name="description" content="Kishore S — B.Tech CSE student specializing in AI, full-stack development and innovative software solutions. View my projects, skills, and experience." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HUD Status Bar -->
+  <div class="hud-bar hud-top-left" id="hud-time">
+    <span class="hud-label">[SYS_ONLINE]</span>
+    <span class="hud-sep"> :: </span>
+    <span id="hud-clock">00:00:00:000</span>
+  </div>
+  <div class="hud-bar hud-top-right">
+    <span>COORD: 1536x738</span><br />
+    <span>LOC: INDIA</span>
+  </div>
+  <div class="hud-bar hud-bottom-left">STATUS: <span class="accent-lime">STABLE</span></div>
+  <div class="hud-bar hud-bottom-right" id="hud-scroll">SCROLL_Y: 0</div>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-logo">~/KishoreS_</div>
+    <ul class="nav-links">
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#skills">SKILLS</a></li>
+      <li><a href="#projects">WORKS</a></li>
+      <li><a href="#experience">EXP</a></li>
+      <li><a href="#achievements">AWARDS</a></li>
+      <li><a href="#contact">CONNECT</a></li>
+    </ul>
+    <a href="kishore_S_cse_resume.pdf" class="nav-resume" download>RESUME ↓</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+  </nav>
+
+  <!-- Mobile Nav Drawer -->
+  <div class="mobile-nav" id="mobileNav">
+    <ul>
+      <li><a href="#about" onclick="closeMobileNav()">ABOUT</a></li>
+      <li><a href="#skills" onclick="closeMobileNav()">SKILLS</a></li>
+      <li><a href="#projects" onclick="closeMobileNav()">WORKS</a></li>
+      <li><a href="#experience" onclick="closeMobileNav()">EXPERIENCE</a></li>
+      <li><a href="#achievements" onclick="closeMobileNav()">AWARDS</a></li>
+      <li><a href="#contact" onclick="closeMobileNav()">CONNECT</a></li>
+      <li><a href="kishore_S_cse_resume.pdf" download>RESUME ↓</a></li>
+    </ul>
+  </div>
+
+  <!-- Canvas Particle Background -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- ==================== HERO ==================== -->
+  <section id="hero">
+    <div class="hero-glass-card reveal">
+      <span class="hero-handle">~/KishoreS_</span>
+      <h1 class="hero-title">
+        <span class="hero-line1">AI &amp; Full-Stack</span>
+        <span class="hero-line2 gradient-text">Developer</span>
+      </h1>
+      <p class="hero-desc">
+        Building intelligent software that bridges theory and real-world impact.<br />
+        B.E. CSE @ PSG iTech · Projects · Ideas · Experiments.
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn-primary">EXPLORE</a>
+        <a href="#contact" class="btn-outline">CONNECT</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT ==================== -->
+  <section id="about" class="section">
+    <div class="section-header reveal">
+      <span class="section-tag">[01] // DATA_DUMP</span>
+      <h2 class="section-title">ABOUT_<span class="gradient-text">ME</span></h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-photo reveal">
+        <div class="photo-corners">
+          <img src="Pictures/kishorepic.jpeg" alt="Kishore S" />
+        </div>
+      </div>
+      <div class="about-info">
+        <div class="info-card reveal" style="--delay: 0.1s">
+          <span class="card-label">CORE_STACK</span>
+          <div class="tag-row">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">FastAPI</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">SQL</span>
+          </div>
+        </div>
+        <div class="info-card reveal" style="--delay: 0.2s">
+          <span class="card-label">AI / ML</span>
+          <div class="tag-row">
+            <span class="tech-tag ai">LLMs</span>
+            <span class="tech-tag ai">RAG</span>
+            <span class="tech-tag ai">Agents</span>
+            <span class="tech-tag ai">ChromaDB</span>
+            <span class="tech-tag ai">Gemini</span>
+            <span class="tech-tag ai">OpenAI</span>
+          </div>
+        </div>
+        <div class="info-card reveal" style="--delay: 0.3s">
+          <span class="card-label">PHILOSOPHY</span>
+          <p class="philosophy-text">
+            I believe the best software is built at the intersection of curiosity and craft.
+            Every project is an experiment — some succeed, some teach. What matters is staying
+            intentional and always shipping.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SKILLS ==================== -->
+  <section id="skills" class="section">
+    <div class="section-header reveal">
+      <span class="section-tag">[02] // CAPABILITIES</span>
+      <h2 class="section-title">SKILL_<span class="gradient-text">SET</span></h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-group reveal" style="--delay: 0s">
+        <h3 class="skill-group-title">▸ LANGUAGES</h3>
+        <div class="tag-row">
+          <span class="skill-pill lang">Python</span>
+          <span class="skill-pill lang">JavaScript</span>
+          <span class="skill-pill lang">Java</span>
+          <span class="skill-pill lang">C</span>
+          <span class="skill-pill lang">SQL</span>
+          <span class="skill-pill lang">HTML/CSS</span>
+        </div>
+      </div>
+      <div class="skill-group reveal" style="--delay: 0.1s">
+        <h3 class="skill-group-title">▸ FRAMEWORKS</h3>
+        <div class="tag-row">
+          <span class="skill-pill fw">React</span>
+          <span class="skill-pill fw">Node.js</span>
+          <span class="skill-pill fw">Express</span>
+          <span class="skill-pill fw">FastAPI</span>
+          <span class="skill-pill fw">Flask</span>
+          <span class="skill-pill fw">Next.js</span>
+        </div>
+      </div>
+      <div class="skill-group reveal" style="--delay: 0.2s">
+        <h3 class="skill-group-title">▸ AI / ML</h3>
+        <div class="tag-row">
+          <span class="skill-pill ai">LangChain</span>
+          <span class="skill-pill ai">LLM APIs</span>
+          <span class="skill-pill ai">RAG</span>
+          <span class="skill-pill ai">Agents</span>
+          <span class="skill-pill ai">ChromaDB</span>
+          <span class="skill-pill ai">Prompt Eng.</span>
+        </div>
+      </div>
+      <div class="skill-group reveal" style="--delay: 0.3s">
+        <h3 class="skill-group-title">▸ TOOLS</h3>
+        <div class="tag-row">
+          <span class="skill-pill tool">Git/GitHub</span>
+          <span class="skill-pill tool">Docker</span>
+          <span class="skill-pill tool">Linux</span>
+          <span class="skill-pill tool">Postman</span>
+          <span class="skill-pill tool">VS Code</span>
+          <span class="skill-pill tool">Vercel</span>
+        </div>
+      </div>
+      <div class="skill-group reveal" style="--delay: 0.4s">
+        <h3 class="skill-group-title">▸ DATABASES</h3>
+        <div class="tag-row">
+          <span class="skill-pill db">SQLite</span>
+          <span class="skill-pill db">MySQL</span>
+          <span class="skill-pill db">MongoDB</span>
+          <span class="skill-pill db">Firebase</span>
+        </div>
+      </div>
+      <div class="skill-group reveal" style="--delay: 0.5s">
+        <h3 class="skill-group-title">▸ SOFT SKILLS</h3>
+        <div class="tag-row">
+          <span class="skill-pill soft">Problem Solving</span>
+          <span class="skill-pill soft">Team Work</span>
+          <span class="skill-pill soft">Leadership</span>
+          <span class="skill-pill soft">Communication</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PROJECTS ==================== -->
+  <section id="projects" class="section">
+    <div class="section-header reveal">
+      <span class="section-tag">[03] // ARTIFACTS</span>
+      <h2 class="section-title">SELECTED_<span class="gradient-text">WORKS</span></h2>
+      <div class="section-meta">
+        <span>/// INDEX_OF_PROJECTS</span><br />
+        <span>/// ACCESS_LEVEL: PUBLIC</span>
+      </div>
+    </div>
+    <div class="projects-list">
+
+      <div class="project-row reveal" style="--delay: 0s">
+        <span class="proj-num">01</span>
+        <div class="proj-info">
+          <h3 class="proj-title">TRAVEL_PLANNER</h3>
+          <p class="proj-desc">Engineered a scalable travel management system allowing users to organize trips, expenses, and documents. Robust backend architecture with persistent storage and global state management.</p>
+        </div>
+        <div class="proj-tags">
+          <span>React</span><span>/</span><span>Node.js</span><span>/</span><span>Express</span><span>/</span><span>MongoDB</span>
+        </div>
+        <div class="proj-links">
+          <a href="#" target="_blank" class="proj-link">GITHUB ↗</a>
+        </div>
+      </div>
+
+      <div class="project-row reveal" style="--delay: 0.08s">
+        <span class="proj-num">02</span>
+        <div class="proj-info">
+          <h3 class="proj-title">GESTURE_MOUSE_CONTROL</h3>
+          <p class="proj-desc">Developed a real-time hand gesture recognition system using MediaPipe and computer vision. Mapped gestures to mouse movement, clicks, scrolling, and system shortcuts.</p>
+        </div>
+        <div class="proj-tags">
+          <span>Python</span><span>/</span><span>MediaPipe</span><span>/</span><span>OpenCV</span>
+        </div>
+        <div class="proj-links">
+          <a href="#" target="_blank" class="proj-link">GITHUB ↗</a>
+        </div>
+      </div>
+
+      <div class="project-row reveal" style="--delay: 0.16s">
+        <span class="proj-num">03</span>
+        <div class="proj-info">
+          <h3 class="proj-title">SPORTS_MANAGEMENT_SYSTEM</h3>
+          <p class="proj-desc">Created an interactive administration dashboard with CRUD workflows for managing teams, players, matches, and statistics. Enabled real-time updates and validations.</p>
+        </div>
+        <div class="proj-tags">
+          <span>Python</span><span>/</span><span>Streamlit</span><span>/</span><span>MySQL</span>
+        </div>
+        <div class="proj-links">
+          <a href="#" target="_blank" class="proj-link">GITHUB ↗</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== EXPERIENCE ==================== -->
+  <section id="experience" class="section">
+    <div class="section-header reveal">
+      <span class="section-tag">[04] // LOG_HISTORY</span>
+      <h2 class="section-title">EXPERIENCE_<span class="gradient-text">LOG</span></h2>
+    </div>
+    <div class="timeline">
+
+      <div class="timeline-item reveal" style="--delay: 0s">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h3 class="timeline-role">Research Intern</h3>
+            <span class="timeline-date">2024 — In Progress</span>
+          </div>
+          <p class="timeline-org">Indian Institute of Information Technology, Design and Manufacturing (IIITDM)</p>
+          <p class="timeline-desc">Working on ML/DL pipelines for Trojan attack detection using SMOTE/ADASYN and LSTM/CNN models. Focus on mitigating adversarial vulnerabilities in neural networks.</p>
+          <div class="tag-row">
+            <span class="tech-tag small">Python</span>
+            <span class="tech-tag small">Machine Learning</span>
+            <span class="tech-tag small">Deep Learning</span>
+            <span class="tech-tag small">LSTM / CNN</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal" style="--delay: 0.15s">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h3 class="timeline-role">AERON: Autonomous Robot (Publication)</h3>
+            <span class="timeline-date">2025 — Under Review</span>
+          </div>
+          <p class="timeline-org">Research Project</p>
+          <p class="timeline-desc">Developed an offline, autonomous TARS-inspired robot. Integrated a transformer-based Small Language Model (SLM), Whisper audio processing, OpenCV vision, and ROS navigation.</p>
+          <div class="tag-row">
+            <span class="tech-tag small">Transformers</span>
+            <span class="tech-tag small">OpenCV</span>
+            <span class="tech-tag small">ROS</span>
+            <span class="tech-tag small">Whisper AI</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal" style="--delay: 0.3s">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h3 class="timeline-role">AI-Assisted Compiler Vis (Publication)</h3>
+            <span class="timeline-date">2025 — Under Review</span>
+          </div>
+          <p class="timeline-org">Research Project</p>
+          <p class="timeline-desc">Engineered an AI-driven compiler visualization system incorporating GUI animation and tangible hardware feedback to aid in compiler design education and debugging.</p>
+          <div class="tag-row">
+            <span class="tech-tag small">AI</span>
+            <span class="tech-tag small">Compilers</span>
+            <span class="tech-tag small">GUI Animation</span>
+            <span class="tech-tag small">Hardware Integ</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== ACHIEVEMENTS ==================== -->
+  <section id="achievements" class="section">
+    <div class="section-header reveal">
+      <span class="section-tag">[05] // MEDALS_LOG</span>
+      <h2 class="section-title">ACHIEVE_<span class="gradient-text">MENTS</span></h2>
+    </div>
+    <div class="achievements-grid">
+
+      <div class="achievement-card reveal" style="--delay: 0s">
+        <div class="ach-icon">🏆</div>
+        <div class="ach-body">
+          <h3 class="ach-title">Qualcomm Edge AI Hackathon</h3>
+          <p class="ach-event">National Hackathon</p>
+          <p class="ach-desc">Selected as a Finalist for building an innovative Edge AI solution using on-device processing and deep learning models.</p>
+        </div>
+        <span class="ach-year">2024</span>
+      </div>
+
+      <div class="achievement-card reveal" style="--delay: 0.1s">
+        <div class="ach-icon">🚀</div>
+        <div class="ach-body">
+          <h3 class="ach-title">SAP Hackfest 2026</h3>
+          <p class="ach-event">Corporate Hackathon</p>
+          <p class="ach-desc">Reached the Finals in a competitive development track, focusing on enterprise software innovation and scalablity.</p>
+        </div>
+        <span class="ach-year">2026</span>
+      </div>
+
+      <div class="achievement-card reveal" style="--delay: 0.2s">
+        <div class="ach-icon">⚡</div>
+        <div class="ach-body">
+          <h3 class="ach-title">Techgium 2025 (Ongoing)</h3>
+          <p class="ach-event">L&amp;T Technology Services</p>
+          <p class="ach-desc">Currently competing as a Finalist in one of India's premier engineering design and innovation contests.</p>
+        </div>
+        <span class="ach-year">2025</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT ==================== -->
+  <section id="contact" class="section section-contact">
+    <div class="section-header reveal">
+      <span class="section-tag">[06] // TRANSMISSION</span>
+      <h2 class="section-title contact-headline">LET'S<br /><span class="gradient-text">BUILD TOGETHER</span></h2>
+      <p class="contact-sub reveal">Open to internships, collaborations, and interesting problems.</p>
+    </div>
+    <div class="contact-cards reveal">
+      <a href="mailto:kishoreselvaraj88@gmail.com" class="contact-card" id="email-card">
+        <span class="cc-icon">✉</span>
+        <span class="cc-label">EMAIL</span>
+        <span class="cc-value">kishoreselvaraj88@gmail.com</span>
+      </a>
+      <a href="#" target="_blank" class="contact-card" id="linkedin-card">
+        <span class="cc-icon">in</span>
+        <span class="cc-label">LINKEDIN</span>
+        <span class="cc-value">LinkedIn Profile</span>
+      </a>
+      <a href="#" target="_blank" class="contact-card" id="github-card">
+        <span class="cc-icon"></span>
+        <span class="cc-label">GITHUB</span>
+        <span class="cc-value">GitHub Profile</span>
+      </a>
+    </div>
+    <div class="contact-phone reveal">
+      <span class="hud-label">// DIRECT_LINE:</span>
+      <a href="tel:+916383071712">+91 6383071712</a>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer>
+    <span class="footer-name">KISHORE S</span>
+    <span class="footer-sep">·</span>
+    <span class="footer-copy">© 2025 All rights reserved</span>
+    <span class="footer-sep">·</span>
+    <span class="footer-built">Built with &lt;3 &amp; code</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
